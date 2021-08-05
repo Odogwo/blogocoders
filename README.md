@@ -58,3 +58,32 @@ C:\Users\USER\Desktop\sites\blogocoders\env>Scripts\activate
 Push to git remote by opening a repo with the same aname and following the instruction on the first welcome page 
 
 
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git remote add origin https://github.com/Odogwo/blogocoders.git
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git branch -M main
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git push -u origin main
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git pull
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git remote -v
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git remote add upstream https://github.com/Odogwo/blogocoders.git
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git remote -v
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git fetch upstream
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git checkout main
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git merge upstream/main
+
+
+
+
+
+
+
+
+
+
