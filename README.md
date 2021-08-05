@@ -79,6 +79,18 @@ Push to git remote by opening a repo with the same aname and following the instr
 (env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git merge upstream/main
 
 
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git add *
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git commit -m "README: added how to sync upstream with local files"
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git push origin --all
+
+
+
+
+
+
+
 
 
 
