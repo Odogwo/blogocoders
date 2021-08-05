@@ -43,5 +43,26 @@ C:\Users\USER\Desktop\sites\blogocoders\env>Scripts\activate
 
 (env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>py manage.py runserver
 
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>pip freeze > requirements.txt
 
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git init
+
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git add *
+
+
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git commit -m "blogcoders book: first commit , complete from the site"
+
+
+
+You can create a local directory, let's call it local-git-repo.git
+
+mkdir local-git-repo.git
+Then in it we can execute
+
+git init --bare
+Then in your actual projcet you can do the following
+
+git add remote origin <path to your git repo>
 
