@@ -86,10 +86,12 @@ Push to git remote by opening a repo with the same aname and following the instr
 (env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git push origin --all
 
 
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git add *
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git commit -m "README: added git add commit and push origin"
 
 
-
-
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git push
 
 
 
