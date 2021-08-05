@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Book
+from .forms import ContactForm
 from django.core.paginator import Paginator #import Paginator
 from django.http import HttpResponse
 from django.core.mail import send_mail, BadHeaderError
@@ -15,8 +16,6 @@ def homepage(request):
 	return render(request=request, template_name="main/home.html", context={'books':page_obj})
 
 
-
-# Create your views here.
 def contact(request):
 	if request.method == 'POST':
 		form = ContactForm(request.POST)
@@ -31,7 +30,7 @@ def contact(request):
 			message = "\n".join(body.values())
 
 			try:
-				send_mail(subject, message, 'admin@example.com', ['admin@example.com']) 
+				send_mail(subject, message, 'martins.nkume@gmail.com', ['martins.nkume@gmail.com']) 
 			except BadHeaderError:
 				return HttpResponse('Invalid header found.')
 			messages.success(request, "Message sent." )

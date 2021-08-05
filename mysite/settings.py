@@ -22,10 +22,7 @@ MESSAGE_TAGS = {
  }
 
 
-from decouple import config
 
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', cast=bool)
 
 import os
 
@@ -36,8 +33,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'kf*m)h-(%rv-6gn@)xu(l0j6s5+9tibjgcgu$%n&(dxbd-ibm5'
+
+
+from decouple import config
+
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', cast=bool)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -60,7 +63,12 @@ INSTALLED_APPS = [
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4' #add the Bootstrap template pack
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' #add the email backend
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' #add the email backend
+EMAIL_BACKEND = 'django_ses.SESBackend'
+AWS_ACCESS_KEY_ID = 'AKIARDNYSZDLVZPAR77E'
+AWS_SECRET_ACCESS_KEY = 'E/ldJNwZQCmvPiTXIqxiA1gvbmO2VxlW0RiPmOI'
+AWS_SES_REGION_NAME = 'us-east-2'
+AWS_SES_REGION_ENDPOINT ='email.us-east-2.amazonaws.com'
 
 
 MIDDLEWARE = [

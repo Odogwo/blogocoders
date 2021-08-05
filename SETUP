@@ -1,0 +1,201 @@
+Microsoft Windows [Version 10.0.19042.1052]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\USER>cd Desktop
+
+C:\Users\USER\Desktop>mkdir sites
+
+C:\Users\USER\Desktop>cd sites
+
+C:\Users\USER\Desktop\sites>mkdir blogocoders
+
+C:\Users\USER\Desktop\sites>cd blogocoders
+
+C:\Users\USER\Desktop\sites\blogocoders>py -m venv env
+
+C:\Users\USER\Desktop\sites\blogocoders>cd env
+
+C:\Users\USER\Desktop\sites\blogocoders\env>Scripts\activate
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env>pip install django==2.1.15
+Collecting django==2.1.15
+  Downloading Django-2.1.15-py3-none-any.whl (7.3 MB)
+     |████████████████████████████████| 7.3 MB 1.1 MB/s
+Collecting pytz
+  Using cached pytz-2021.1-py2.py3-none-any.whl (510 kB)
+Installing collected packages: pytz, django
+Successfully installed django-2.1.15 pytz-2021.1
+WARNING: You are using pip version 21.1.3; however, version 21.2.2 is available.
+You should consider upgrading via the 'c:\users\user\desktop\sites\blogocoders\env\scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env>pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\user\desktop\sites\blogocoders\env\lib\site-packages (21.1.3)
+Collecting pip
+  Using cached pip-21.2.2-py3-none-any.whl (1.6 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.1.3
+    Uninstalling pip-21.1.3:
+      Successfully uninstalled pip-21.1.3
+ERROR: Could not install packages due to an OSError: [WinError 5] Access is denied: 'C:\\Users\\USER\\AppData\\Local\\Temp\\pip-uninstall-d4pjqfzs\\pip.exe'
+Check the permissions.
+
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env>django-admin startproject mysite
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env>cd mysite
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>py manage.py startapp main
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite> python3 manage.py runserver
+'python3' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>py manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 15 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 05, 2021 - 04:05:08
+Django version 2.1.15, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 15 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 05, 2021 - 04:07:29
+Django version 2.1.15, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 15 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 05, 2021 - 04:07:33
+Django version 2.1.15, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>py manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>py manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 05, 2021 - 04:10:55
+Django version 2.1.15, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[05/Aug/2021 04:11:43] "GET / HTTP/1.1" 200 16348
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 05, 2021 - 04:12:21
+Django version 2.1.15, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 05, 2021 - 04:13:16
+Django version 2.1.15, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[05/Aug/2021 04:13:18] "GET / HTTP/1.1" 200 19
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 05, 2021 - 04:15:26
+Django version 2.1.15, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>py manage.py makemigrations
+Migrations for 'main':
+  main\migrations\0001_initial.py
+    - Create model Book
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>py manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main, sessions
+Running migrations:
+  Applying main.0001_initial... OK
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>py manage.py createsuperuser
+Username (leave blank to use 'user'): admin
+Email address: martins.nkume@gmail.com
+Password:
+Password (again):
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+This password is entirely numeric.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>py manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 05, 2021 - 04:18:30
+Django version 2.1.15, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[05/Aug/2021 04:18:40] "GET /admin/ HTTP/1.1" 302 0
+[05/Aug/2021 04:18:40] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[05/Aug/2021 04:18:41] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[05/Aug/2021 04:18:49] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[05/Aug/2021 04:18:49] "GET /admin/ HTTP/1.1" 200 3694
+[05/Aug/2021 04:19:22] "GET /admin/main/book/ HTTP/1.1" 200 3148
+[05/Aug/2021 04:19:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[05/Aug/2021 04:19:33] "GET /admin/ HTTP/1.1" 200 3694
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 05, 2021 - 04:23:26
+Django version 2.1.15, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 05, 2021 - 04:23:54
+Django version 2.1.15, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>pip install django-crispy-forms
+Collecting django-crispy-forms
+  Using cached django_crispy_forms-1.12.0-py3-none-any.whl (122 kB)
+Installing collected packages: django-crispy-forms
+Successfully installed django-crispy-forms-1.12.0
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>

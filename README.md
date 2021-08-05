@@ -1,5 +1,8 @@
 This program was a tutorial from 
 https://www.ordinarycoders.com/blog/article/django-beginners-guide
+https://www.jquery-az.com/list-branches-git/
+
+
 
 C:\Users\USER>cd Desktop
 
@@ -93,6 +96,11 @@ Push to git remote by opening a repo with the same aname and following the instr
 
 (env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>git push
 
+
+(env) C:\Users\USER\Desktop\sites\blogocoders\env\mysite>pip install django-ses
+
+
+https://www.ordinarycoders.com/blog/article/django-amazon-ses-emails
 
 
 
